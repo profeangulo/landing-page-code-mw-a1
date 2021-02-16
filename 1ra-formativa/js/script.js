@@ -1,0 +1,2 @@
+/* Inicio de función JS */
+
