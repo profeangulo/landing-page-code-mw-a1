@@ -117,3 +117,35 @@ footer article div#superior-footer div.cajas-footer nav#redes a:hover { color: #
 footer article div#inferior-footer { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; }
 footer article div#inferior-footer p { margin: 0 auto; float: none; display: block; font-size: 0.9em; color: #fff; letter-spacing: 0.04em; font-weight: 300; line-height: 1.5em; text-align: center; }
 footer article div#inferior-footer p span { font-weight: 700; }
+
+
+
+/* Zona de Media Queries para Responsive */
+
+/* Ajustes Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article a { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    main section#presentacion { height: auto; }
+    main section#presentacion article { width: 80%; height: auto; }
+    main section#presentacion article figure { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#presentacion article figure img { width: auto; height: 300px; top: 45px; }
+    main section#presentacion article div#textos-presentacion { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#presentacion article div#textos-presentacion h2,
+    main section#presentacion article div#textos-presentacion h1,
+    main section#presentacion article div#textos-presentacion p { text-align: center; }
+    main section#presentacion article div#textos-presentacion p { margin: 0 auto; float: none; padding: 0 0 15px; }
+    main section#presentacion article div#textos-presentacion a { margin: 0 auto; float: none; width: 150px; text-align: center; }
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+    header article a { margin: 0; float: left; }
+}
+
+@media only screen and (max-width: 399px){
+
+}
