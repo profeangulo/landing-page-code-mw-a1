@@ -16,26 +16,22 @@ body { margin: 0 !important; }
 /* Estilo propio */
 
 /* Componente Menú Móviles */
-aside#menu-movil { display: none; }
+aside#menu-movil { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 99999; background: rgb(48 54 106 / 97%); }
 
-aside#menu-movil a#abrir {  }
-aside#menu-movil a#abrir i {  }
-aside#menu-movil a#abrir:hover {  }
-aside#menu-movil a#abrir:hover i {  }
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(48 54 106); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#abrir:hover { background: #ff00c0; transition: all 0.3s ease-in; }
 
-aside#menu-movil a#cerrar {  }
-aside#menu-movil a#cerrar i {  }
-aside#menu-movil a#cerrar:hover {  }
-aside#menu-movil a#cerrar:hover i {  }
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(48 54 106); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#cerrar:hover { background: #ff00c0; transition: all 0.3s ease-in; }
 
-aside#menu-movil nav {  }
-aside#menu-movil nav a {  }
-aside#menu-movil nav a:hover {  }
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in; }
 
 
 
 /* Componente: HEADER */
-header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 99999; margin: 0; float: none; background: #fff; }
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 99998; margin: 0; float: none; background: #fff; }
 header article { width: 1100px; height: 100px; position: relative; margin: 0 auto; float: none; }
 
 header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0; float: left; top: 10px; }
@@ -129,6 +125,9 @@ footer article div#inferior-footer p span { font-weight: 700; }
     header article nav { display: none; }
 
 
+    aside#menu-movil { display: block; }
+
+
     main section#presentacion { height: auto; }
     main section#presentacion article { width: 80%; height: auto; }
     main section#presentacion article figure { width: 100%; height: auto; margin: 0 auto; float: none; }
@@ -139,6 +138,19 @@ footer article div#inferior-footer p span { font-weight: 700; }
     main section#presentacion article div#textos-presentacion p { text-align: center; }
     main section#presentacion article div#textos-presentacion p { margin: 0 auto; float: none; padding: 0 0 15px; }
     main section#presentacion article div#textos-presentacion a { margin: 0 auto; float: none; width: 150px; text-align: center; }
+
+
+    main section#servicios { height: auto; }
+    main section#servicios article { width: 80%; height: auto; }
+    main section#servicios article figure { margin: 50px auto 0 auto; float: none; display: block; }
+
+
+    footer article { width: 80%; height: auto; }
+    footer article div#superior-footer { width: 100%; height: auto; }
+    footer article div#superior-footer div.cajas-footer { margin: 0 auto; float: none; }
+    footer article div#superior-footer div.cajas-footer:last-child { margin: 0 auto; height: 100px; }
+
+    footer article div#inferior-footer { width: 100%; }
 }
 
 /* Ajustes para Móviles */
